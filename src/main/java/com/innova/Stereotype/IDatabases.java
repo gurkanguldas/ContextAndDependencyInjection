@@ -1,6 +1,6 @@
 package com.innova.Stereotype;
 
-public interface IDatabases {
-
+public interface IDatabases
+{
 	String connectionDatabase();
 }

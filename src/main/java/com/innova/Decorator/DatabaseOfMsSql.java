@@ -1,6 +1,8 @@
-package com.innova.Qualifier;
+package com.innova.Decorator;
 
-@QualifierMultipleSelection
+import javax.enterprise.inject.Alternative;
+
+@Alternative
 public class DatabaseOfMsSql implements IDatabases{
 
 	@Override

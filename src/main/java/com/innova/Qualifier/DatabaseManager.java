@@ -27,5 +27,4 @@ public class DatabaseManager implements Serializable{
 	{
 		return databases.connectionDatabase();
 	}
-
 }

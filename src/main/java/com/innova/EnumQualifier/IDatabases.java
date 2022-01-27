@@ -1,6 +1,6 @@
 package com.innova.EnumQualifier;
 
-public interface IDatabases {
-
+public interface IDatabases
+{
 	String connectionDatabase();
 }

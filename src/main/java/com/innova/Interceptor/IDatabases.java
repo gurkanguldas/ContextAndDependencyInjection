@@ -1,6 +1,6 @@
 package com.innova.Interceptor;
 
-public interface IDatabases {
-
+public interface IDatabases
+{
 	String connectionDatabase();
 }

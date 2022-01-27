@@ -1,6 +1,8 @@
-package com.innova.EnumQualifier;
+package com.innova.Decorator;
 
-@EnumQualifier(EDatabases.MariaDB)
+import javax.enterprise.inject.Alternative;
+
+@Alternative
 public class DatabaseOfMariaDb implements IDatabases{
 
 	@Override
@@ -8,4 +10,5 @@ public class DatabaseOfMariaDb implements IDatabases{
 	{
 		return "Connected to MariaDb.";
 	}
+
 }

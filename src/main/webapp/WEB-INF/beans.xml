@@ -8,37 +8,43 @@
 	by applicable law or agreed to in writing, software distributed under the 
 	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
 	OF ANY KIND, either express or implied. See the License for the specific 
-	language governing permissions and limitations under the License. -->
-<!-- Marker file indicating CDI should be enabled -->
-<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="
-        http://xmlns.jcp.org/xml/ns/javaee
-        http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
-	bean-discovery-mode="all">
+	language governing permissions and limitations under the License. 
+ Marker file indicating CDI should be enabled -->
+<beans bean-discovery-mode="all" version="1.1"
+ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="         http://xmlns.jcp.org/xml/ns/javaee         http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd">
+ 
+ <!-- CDI Database Bean Configuration 
 
-<!-- CDI Database Bean Configuration -->
-<!--
 	<alternatives>
 		<class>com.innova.CDI.DatabaseOfMariaDb</class>
 	</alternatives>
--->	
+ -->
 
-<!-- Interceptor Database Bean Configuration -->
-<!--
+ <!-- Interceptor Database Bean Configuration 
+
 	<interceptors>
 		<class>com.innova.Interceptor.InvokeDatabase</class>
 	</interceptors>
 	<alternatives>
 		<class>com.innova.Interceptor.DatabaseOfPostgreSql</class>
 	</alternatives>
--->
+ -->
+ 
+ <!-- Stereotype Database Bean Configuration 
 
-<!-- Stereotype Database Bean Configuration -->
-<!--
 	<alternatives>
 		<class>com.innova.Stereotype.DatabaseOfMySql</class>
 	</alternatives>
   -->
-	
+  
+ <!-- Decorator Database Bean Configuration  
+ 	
+ 	<decorators>
+ 		<class>com.innova.Decorator.DecoratorDatabase</class>
+ 	</decorators>
+	<alternatives>
+		<class>com.innova.Decorator.DatabaseOfPostgreSql</class>
+	</alternatives>
+ -->
 </beans>
